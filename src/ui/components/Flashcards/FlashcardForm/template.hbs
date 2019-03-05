@@ -1,0 +1,13 @@
+<div class="flashcard form">
+  <h3>Add a New Card</h3>
+
+  <label for="question">Question</label>
+  <input name="question" value={{this.question}} onchange={{action this.updateQuestion}}>
+  <label for="answer">Answer</label>
+  <input name="answer" value={{this.answer}} onchange={{action this.updateAnswer}}>
+
+  <div class="button-group">
+    <button onclick={{action this.submit}} >Submit</button>
+    <button onclick={{action this.cancel}} >Cancel</button>
+  </div>
+</div>

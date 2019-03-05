@@ -1,0 +1,12 @@
+<div class="flashcard">
+  <button class="flip-button" onclick={{action this.toggleQuestion}}>Flip Card</button>
+  <button class="delete-button" onclick={{action this.delete}}>Delete Card</button>
+
+  <h3 className={{this.contentClass}}>
+    {{#if this.showQuestion}}
+      {{@question}}
+    {{else}}
+      {{@answer}}
+    {{/if}}
+  </h3>
+</div>

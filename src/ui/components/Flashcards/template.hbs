@@ -1,0 +1,26 @@
+<div class="flashcards">
+  {{#if this.showAddCardForm}}
+    <FlashcardForm @onCreate={{action addCard}} @onCancel={{action cancelForm}} />
+
+  {{else}}
+    <button onclick={{action this.showForm}} class="add-card">Add Card</button>
+
+
+    {{#if this.currentCard}}
+      <Flashcard @question="{{this.currentCard.question}}" @answer="{{this.currentCard.answer}}" @onDelete={{action this.deleteCard}}/>
+    {{/if}}
+
+
+
+
+    {{#if this.moreCards}}
+      <div class="button-group">
+        <button onclick={{action this.previousCard}} class="add-card">Previous Card</button>
+        <button onclick={{action this.nextCard}} class="add-card">Next Card</button>
+      </div>
+
+    {{/if}}
+
+  {{/if}}
+
+</div>

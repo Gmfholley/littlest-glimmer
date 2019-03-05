@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@glimmer/application": "^0.13.0",
-    "@glimmer/application-pipeline": "^0.13.0",
+    "@glimmer/application-pipeline": "^0.15.0",
     "@glimmer/blueprint": "~0.13.0",
     "@glimmer/component": "^0.13.0",
     "@glimmer/inline-precompile": "^1.0.0",
